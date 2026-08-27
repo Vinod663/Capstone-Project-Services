@@ -1,4 +1,4 @@
-# Capstone Project - Frontend Web Application
+# Capstone Project - Services
 
 * **Student Name:** Vinod Niloshana Fernando
 * **Student Number:** 241711104
@@ -8,9 +8,7 @@
 ---
 
 ## Project Description
-This is the frontend web application for the Capstone Project, providing a responsive interface to manage students, academic programs, and enrollments. It communicates with a centralized API Gateway that routes traffic to backend microservices (Student, Program, and Enrollment services) hosted on Google Cloud Platform.
-
-*(Note for Evaluators: The public URL for this deployed Cloud Run application is located in the "About" section on the right-hand side of this GitHub repository).*
+This repository contains the backend domain microservices for the Capstone Project, encompassing the `student-service`, `program-service`, and `enrollment-service`. These services handle core business logic, database transactions (PostgreSQL and MongoDB), and file storage integrations (Google Cloud Storage). They are designed to register with the Eureka Service Registry and fetch configurations from the centralized Config Server.
 
 ## Technology Stack
 * **Framework:** Next.js (v16.1.6)
@@ -30,6 +28,6 @@ This is the frontend web application for the Capstone Project, providing a respo
 **2. Installation**
 Clone the repository and install the required dependencies:
 ```bash
-git clone https://github.com/Vinod663/Webapp.git
-cd Webapp
+git clone https://github.com/Vinod663/Capstone-Project-Services.git
+cd Capstone-Project-Services
 pnpm install
